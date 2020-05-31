@@ -3,7 +3,7 @@ rm(list=ls())
 library(ggplot2)
 library(reshape2)
 
-K <- 100
+K <- 100 #strike
 S <- seq(0,200,length=1000)
 
 payoff_call <- pmax(S-K, 0)
