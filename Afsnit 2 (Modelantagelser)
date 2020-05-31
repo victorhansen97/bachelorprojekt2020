@@ -55,7 +55,7 @@ p_Close <- ggplot(data=df_stock,aes(x=1:nrow(df_stock),y=Close)) +
 # vil vil nu plotte logafkast
 df_stock_returns <- data.frame(Date = df_stock$Date[-1], Close = diff(log(df_stock$Close))) # der er ét log-afkast mere end der er lukkekurser
 
-# tilpasser breaks og datolabels
+# tilpasser breaks og datolabel
 breakVec_returns <- breakVec - 1
 breakVec_returns[1] <- 1
 labelVec_returns <- as.character(df_stock_returns[breakVec_returns,]$Date)
