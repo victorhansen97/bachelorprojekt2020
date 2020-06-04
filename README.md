@@ -1,1 +1,0 @@
-# bachelorprojekt2020
